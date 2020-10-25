@@ -49,7 +49,7 @@ NOTE: During Emergency Shutdown mode of the Vault, the intention is for the Vaul
 
 ### Definitions
 
-- Strategist: original creator of strategy, is in charge of monitoring it's position for adverse effects.
+- Strategist: original creator of strategy, is in charge of monitoring its position for adverse effects.
 - Keeper: a bot which maintains the strategy, by ensuring it regularly generates returns for the Vault during pre-defined intervals or events
 
 ### Normal Operation
@@ -58,9 +58,9 @@ NOTE: Triggers must be defined for the interval(s) allowable without causing ins
 
 NOTE: Updates must not trigger an instability in the Vault, especially when considering other Strategies' update rates
 
-1. The Strategy can interact with it's connected Vault, and obtain capital according to it's current borrowing limit
+1. The Strategy can interact with its connected Vault, and obtain capital according to its current borrowing limit
 2. The Strategy can interact with any external system required to turn the capital borrowed into returns for the Vault
-3. The Strategy defines triggers for either Governance, the Strategist, or the Keeper to update or adjust it's position(s), based on on-chain activity, the synchronization frequency, and externalized gas costs
+3. The Strategy defines triggers for either Governance, the Strategist, or the Keeper to update or adjust its position(s), based on on-chain activity, the synchronization frequency, and externalized gas costs
 4. The Vault can migrate the debt and positions of the Strategy to a newer version of that strategy
 5. Either Governance or the Strategist can trigger Emergency Exit Mode
 
@@ -74,7 +74,7 @@ NOTE: In this mode, the Strategy defines a reversionary position that seeks to u
 
 ## Governance Specification
 
-NOTE: Governance is expected to manage each deployed Vault and the strategies connected to them in order to maintain the risk and returns that Vault users expect
+NOTE: Governance is expected to manage each deployed Vault and the strategies connected to them in order to maintain the risk and returns that the Vault users expect
 
 1. Governance must be able to perform the calls expected for it to manage the Vaults and Strategies it maintains within a reasonable timeframe in order to maintain safe operation of the system.
 
